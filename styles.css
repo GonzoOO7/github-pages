@@ -1,0 +1,45 @@
+* {
+    font-family: monospace;
+    color: #ddd;
+    margin:0;
+    padding: 1rem;
+}
+body * {
+    display: grid;
+
+}
+body {
+    background: #222;
+    padding:2rem;
+}
+body > * {background: #333}
+body > * > * {background: #444}
+button {
+    background: #555;
+    width: 100%;
+    height: 100%;
+}
+
+#log {
+    display: inline;
+}
+.git {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#pullBtn {
+    background: green;
+}
+#pushBtn {
+    background: orangered;
+}
+#list > * {
+    background: #666;
+    padding: .1rem;
+    display: grid;
+    grid-template-columns: 1fr auto 5rem;
+}
+
+#list > *:nth-child(2n) {
+    background: #606060;
+}

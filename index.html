@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Synced Todo List</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+        <h2>GitHub Todo List</h2>
+
+        <div class="git">
+            <button id="pullBtn">Pull From GitHub</button>
+            <button id="pushBtn">Push To GitHub</button>
+            <pre id="log"></pre>
+        </div>
+
+        <div class="todo">
+            <h3>Todos:</h3>
+            <div id="list"></div>
+
+            <input id="newTodo" placeholder="New todo..." style="width:260px;">
+            <button id="addBtn">Add</button>
+        </div>
+    </div>
+
+</body>
+<script src="scripts/git-api.js"></script>
+<script src="scripts/main.js"></script>
+</html>
